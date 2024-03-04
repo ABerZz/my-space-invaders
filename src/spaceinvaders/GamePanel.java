@@ -29,7 +29,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 	private boolean startGame, createShipX;
 	private int numAliensLeft, score, countDown;
 	private static final int NUM_ALIENS = 55;
-	private static final ImageIcon BACKGROUND = new ImageIcon("../Space Invaders/resources/background.jpg");
+	private static final ImageIcon BACKGROUND = new ImageIcon("./resources/background.jpg");
 	
 	
 	/**
@@ -163,9 +163,9 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 		add(lbText);
 		add(lbScrollPane);
 		
-		// read the leader board from the file "Leaderboard.txt" in the directory,
+		// read the leader board from the file "resources/Leaderboard.txt" in the directory,
 		// and then add the lines to the leader board text area
-		IO.openInputFile("Leaderboard.txt");
+		IO.openInputFile("resources/Leaderboard.txt");
 		String line = IO.readLine();
 		
 		while(line != null){
@@ -449,7 +449,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 			newScore += Integer.toString(score);
 			
 			// store all the current scores with the new score in an array
-			IO.openInputFile("Leaderboard.txt");
+			IO.openInputFile("resources/Leaderboard.txt");
 			
 			// determine the number of saved scores
 			String line = IO.readLine();
@@ -465,7 +465,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 			// add the scores to the array
 			String[] allScores  = new String[numLines + 1];
 			
-			IO.openInputFile("Leaderboard.txt");
+			IO.openInputFile("resources/Leaderboard.txt");
 			
 			for(int i = 0; i < numLines; i++)
 				allScores[i] = IO.readLine();
@@ -519,7 +519,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 			}
 			
 			// enter the sorted list of score in the leader board
-			IO.createOutputFile("Leaderboard.txt");
+			IO.createOutputFile("resources/Leaderboard.txt");
 			
 			for(int i = 0; i < allScores.length; i++) {
 				

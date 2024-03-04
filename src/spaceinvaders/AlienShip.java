@@ -10,10 +10,10 @@ import javax.swing.ImageIcon;
 public class AlienShip extends Figure {
 
 	// declare variables
-	private final static ImageIcon ALIEN1_ICON = new ImageIcon("../Space Invaders/resources/AlienShip1.jpg"),
-			                       ALIEN2_ICON = new ImageIcon("../Space Invaders/resources/AlienShip2.jpg"),
-			                       ALIEN3_ICON = new ImageIcon("../Space Invaders/resources/AlienShip3.png"),
-	                               ALIENX_ICON = new ImageIcon("../Space Invaders/resources/AlienShipX.png");
+	private final static ImageIcon ALIEN1_ICON = new ImageIcon("./resources/AlienShip1.jpg"),
+			                       ALIEN2_ICON = new ImageIcon("./resources/AlienShip2.jpg"),
+			                       ALIEN3_ICON = new ImageIcon("./resources/AlienShip3.png"),
+	                               ALIENX_ICON = new ImageIcon("./resources/AlienShipX.png");
 	private static int vAlien, vX;
 	private int width, height;
 	

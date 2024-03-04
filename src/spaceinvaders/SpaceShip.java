@@ -11,7 +11,7 @@ import javax.swing.ImageIcon;
 public class SpaceShip extends Figure{
 
 	// declare variables
-	private final static ImageIcon SHIP_ICON = new ImageIcon("../Space Invaders/resources/SpaceShip.png");
+	private final static ImageIcon SHIP_ICON = new ImageIcon("./resources/SpaceShip.png");
 	private static int vShip;
 	private int width, height, vX;
 	

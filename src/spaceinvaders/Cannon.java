@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 public class Cannon extends Figure {
 
 	// declare variables
-	private static final ImageIcon CANNON_ICON = new ImageIcon("../Space Invaders/resources/Cannon.png");
+	private static final ImageIcon CANNON_ICON = new ImageIcon("./resources/Cannon.png");
 	private final int vY = 2;
 	private int height;
 	
