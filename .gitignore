@@ -1,4 +1,5 @@
 # User defined
+resources/Leaderboard.txt
 *.exe
 
 # Compiled class file

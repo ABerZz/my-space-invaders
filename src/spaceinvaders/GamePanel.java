@@ -163,6 +163,11 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 		add(lbText);
 		add(lbScrollPane);
 		
+		// make sure the file "resources/Leaderboard.txt" exists in the directory;
+		// if it does not, create one
+		IO.createOutputFile("resources/Leaderboard.txt", true);
+		IO.closeOutputFile();
+
 		// read the leader board from the file "resources/Leaderboard.txt" in the directory,
 		// and then add the lines to the leader board text area
 		IO.openInputFile("resources/Leaderboard.txt");
